@@ -47,6 +47,19 @@ At this point, you'll be asked to give a repository url. Use the same url you co
 
 Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000
 
+# HOLD UP!!
+
+There's one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in 'Main Configs' to your info (url will be https://yourusername.github.io/blog - title will be whatever you want - author will be your name - etc) you must do one more thing!
+
+Navigate to the 'Jekyll & Plugins' section. Change the option ##### root: / to  
+##### root: /blog 
+
+This will point the root url of your site to the correct page. Don't forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!) 
+
+After adding, committing, and pushing your changes to github, you'll be able to view your blog at yourusername.github.io/blog
+
+# Optionally install a new theme
+
 To install a new theme, such as ioveracker's MNML, follow these steps:
 
 - git clone git://github.com/ioveracker/mnml.git .themes/mnml
@@ -55,8 +68,9 @@ To install a new theme, such as ioveracker's MNML, follow these steps:
 - rake deploy
 - rake preview
 
+
 # And that's how it's done
 
-As always, don't forget to git add .&& git commit -m "updating site.." && git push -u origin master to save your changes on yourusername.github.io/blog!
+As always, don't forget to git add .&& git commit -m "updating site.." && git push -u origin master to save your changes and make them visible at yourusername.github.io/blog
 
-If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. Have fun exploring Octopress and Jekyll!!
+If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. 

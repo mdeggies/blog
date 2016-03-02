@@ -7,7 +7,9 @@ title: Michele Degges
 subtitle: Exploring Code and Design in SF
 author: Michele Degges
 simple_search: https://www.google.com/search
-description: A personal and professional blog
+mnml_mailto: mdeggies@gmail.com
+mnml_host_name: gh-pages
+mnml_host_url: https://pages.github.com/
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

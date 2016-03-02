@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gh-pages | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/gh-pages/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-02T01:28:10-08:00</updated>
+  <updated>2016-03-02T01:36:54-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -67,6 +67,20 @@
 
 <p>Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000</p>
 
+<h1>HOLD UP!!</h1>
+
+<p>There&rsquo;s one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in &lsquo;Main Configs&rsquo; to your info (url will be <a href="https://yourusername.github.io/blog">https://yourusername.github.io/blog</a> - title will be whatever you want - author will be your name - etc) you must do one more thing!</p>
+
+<p>Navigate to the &lsquo;Jekyll &amp; Plugins&rsquo; section. Change the option ##### root: / to</p>
+
+<h5>root: /blog</h5>
+
+<p>This will point the root url of your site to the correct page. Don&rsquo;t forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!)</p>
+
+<p>After adding, committing, and pushing your changes to github, you&rsquo;ll be able to view your blog at yourusername.github.io/blog</p>
+
+<h1>Optionally install a new theme</h1>
+
 <p>To install a new theme, such as ioveracker&rsquo;s MNML, follow these steps:</p>
 
 <ul>
@@ -80,9 +94,9 @@
 
 <h1>And that&rsquo;s how it&rsquo;s done</h1>
 
-<p>As always, don&rsquo;t forget to git add .&amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes on yourusername.github.io/blog!</p>
+<p>As always, don&rsquo;t forget to git add .&amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes and make them visible at yourusername.github.io/blog</p>
 
-<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. Have fun exploring Octopress and Jekyll!!</p>
+<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.</p>
 ]]></content>
   </entry>
   

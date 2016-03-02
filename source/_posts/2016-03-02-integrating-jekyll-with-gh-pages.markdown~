@@ -51,7 +51,9 @@ Rake install will install the default Octopress theme on your site. Generate and
 
 There's one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in 'Main Configs' to your info (url will be https://yourusername.github.io/blog - title will be whatever you want - author will be your name - etc) you must do one more thing!
 
-Navigate to the 'Jekyll & Plugins' section. Change the option ##### root: / to  
+Navigate to the 'Jekyll & Plugins' section. Change the option 
+##### root: / 
+to  
 ##### root: /blog 
 
 This will point the root url of your site to the correct page. Don't forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!) 

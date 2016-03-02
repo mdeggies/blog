@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gh-pages | Michele Degges]]></title>
+  <link href="http://mdeggies.github.io/blog/blog/categories/gh-pages/atom.xml" rel="self"/>
+  <link href="http://mdeggies.github.io/blog/"/>
+  <updated>2016-03-02T01:08:58-08:00</updated>
+  <id>http://mdeggies.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Michele Degges]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Integrating Jekyll with gh-pages]]></title>
+    <link href="http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages/"/>
+    <updated>2016-03-02T00:29:36-08:00</updated>
+    <id>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages</id>
+    <content type="html"><![CDATA[<p>Integrating Jekyll with gh-pages shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
+
+<p>Well, not so fast.. Jekyll and gh-pages are not the stellar, easy-going couple that they claim to be. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.</p>
+
+<p>In comes Octopress! Octopress is a static blogging framework built on top of Jekyll. It&rsquo;s supposed to allow for easy integration and deployment. I was so excited when I found out it existed.. but then I started reading through it&rsquo;s documentation and my excitement fizzled out pretty quick.</p>
+
+<h1>The goal</h1>
+
+<p>We know the goal- to get a blog up and running on gh-pages- specifically, gh project pages- since we already have a site at yourusername.github.io</p>
+
+<h1>The steps</h1>
+
+<p>First, create a new repo on github.com called blog. This is where our octopress site will live. Copy the location (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>).</p>
+
+<p>In your terminal, navigate to the directory you want to create and edit your blog project in. In that directory, perform these commands:</p>
+
+<ul>
+<li>git clone git://github.com/imathis/octopress.git blog</li>
+<li>cd blog</li>
+<li>git init</li>
+<li>git add .</li>
+<li>git remote add origin <a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a></li>
+<li>git commit -m &ldquo;initializing octopress&rdquo;</li>
+<li>git push origin master</li>
+</ul>
+
+
+<p>You&rsquo;ve just initialized your blog project with Octopress! Now let&rsquo;s set everything up:</p>
+
+<ul>
+<li>gem install bundler</li>
+<li>bundle install</li>
+<li>rake setup_github_pages</li>
+</ul>
+
+
+<p>At this point, you&rsquo;ll be asked to give a repository url. Use the same url you copied from github (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>)</p>
+
+<ul>
+<li>git   config branch.master.remote origin</li>
+<li>rake install</li>
+<li>rake generate</li>
+<li>rake deploy</li>
+<li>rake preview</li>
+</ul>
+
+
+<p>Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000</p>
+
+<p>To install a new theme, such as ioveracker&rsquo;s MNML, follow these steps:</p>
+
+<ul>
+<li>git clone git://github.com/ioveracker/mnml.git .themes/mnml</li>
+<li>rake install[&lsquo;mnml&rsquo;]</li>
+<li>rake generate</li>
+<li>rake deploy</li>
+<li>rake preview</li>
+</ul>
+
+
+<h1>And that&rsquo;s how it&rsquo;s done</h1>
+
+<p>As always, don&rsquo;t forget to git add .&amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes on yourusername.github.io/blog!</p>
+
+<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. Have fun exploring Octopress and Jekyll!!</p>
+]]></content>
+  </entry>
+  
+</feed>

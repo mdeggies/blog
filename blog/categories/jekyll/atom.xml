@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Michele Degges]]></title>
-  <link href="http://mdeggies.github.io/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: jekyll | Michele Degges]]></title>
+  <link href="http://mdeggies.github.io/blog/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
   <updated>2016-03-02T01:03:45-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
@@ -14,13 +14,10 @@
 
   
   <entry>
-    
     <title type="html"><![CDATA[Integrating Jekyll with gh-pages]]></title>
     <link href="http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages/"/>
-    
     <updated>2016-03-02T00:29:36-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages</id>
-    
     <content type="html"><![CDATA[<p>Integrating Jekyll with gh-pages shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
 
 <p>Well, not so fast.. Jekyll and gh-pages are not the stellar couple that they claim. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.</p>
@@ -75,7 +72,6 @@
 
 <p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. Have fun exploring Octopress and Jekyll!!</p>
 ]]></content>
-    
   </entry>
   
 </feed>

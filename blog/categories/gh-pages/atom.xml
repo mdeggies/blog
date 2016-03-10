@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gh-pages | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/gh-pages/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:38:30-08:00</updated>
+  <updated>2016-03-09T21:41:43-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -26,11 +26,11 @@
 
 <p>In comes <a href="http://octopress.org/">Octopress</a>! Octopress is a static blogging framework built on top of Jekyll. It&rsquo;s supposed to allow for easy integration and deployment. I was so excited when I found out it existed.. but then I started reading through it&rsquo;s documentation and my excitement fizzled out pretty quick.</p>
 
-<h1>The goal</h1>
+<h2>The goal</h2>
 
 <p>We know the goal- to get a blog up and running on gh-pages- specifically, <a href="https://help.github.com/articles/creating-project-pages-manually/">gh project pages</a>- since we already have a site at yourusername.github.io</p>
 
-<h1>The steps</h1>
+<h2>The steps</h2>
 
 <p>First, create a new repo on github.com called blog. This is where our octopress site will live. Copy the location (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>).</p>
 
@@ -69,7 +69,7 @@
 
 <p>Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000</p>
 
-<h1>HOLD UP!!</h1>
+<h2>HOLD UP!!</h2>
 
 <p>There&rsquo;s one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in &lsquo;Main Configs&rsquo; to your info (url will be <a href="https://yourusername.github.io/blog">https://yourusername.github.io/blog</a> - title will be whatever you want - author will be your name - etc) you must do one more thing!</p>
 
@@ -98,7 +98,7 @@
 </ul>
 
 
-<h1>And that&rsquo;s how it&rsquo;s done</h1>
+<h2>And that&rsquo;s how it&rsquo;s done</h2>
 
 <p>As always, don&rsquo;t forget to git add . &amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes and make them visible at yourusername.github.io/blog</p>
 

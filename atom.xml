@@ -4,7 +4,7 @@
   <title><![CDATA[Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:38:30-08:00</updated>
+  <updated>2016-03-09T21:41:43-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -42,7 +42,7 @@
 
 <p>Now.. this was a pretty challenging task for me. I got the basic version down, but it took me about 4 hours to complete and another hour of debugging before I felt comfortable enough to submit the final version. Here&rsquo;s what I learned from the whole process:</p>
 
-<h1>Don&rsquo;t freak out!</h1>
+<h2>Don&rsquo;t freak out!</h2>
 
 <p>Once I got the challenge emailed to me, I set an alarm for 2 hours. While this helped me keep track of my time, it also made me really anxious as I saw the minutes slipping by. I would have gotten further along much faster if I didn&rsquo;t obsessively check the time every five minutes.</p>
 
@@ -481,7 +481,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Feel free to reach out to me via email (<a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x6d;&#100;&#x65;&#x67;&#103;&#105;&#101;&#115;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#x6d;&#100;&#101;&#x67;&#103;&#x69;&#x65;&#x73;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a>), or on Twitter (@mdeggies) :)</p>
+<p>Feel free to reach out to me via email (<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#109;&#100;&#x65;&#103;&#103;&#105;&#x65;&#x73;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#x6d;&#x64;&#101;&#103;&#103;&#105;&#x65;&#115;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>), or on Twitter (@mdeggies) :)</p>
 ]]></content>
     
   </entry>
@@ -502,11 +502,11 @@
 
 <p>In comes <a href="http://octopress.org/">Octopress</a>! Octopress is a static blogging framework built on top of Jekyll. It&rsquo;s supposed to allow for easy integration and deployment. I was so excited when I found out it existed.. but then I started reading through it&rsquo;s documentation and my excitement fizzled out pretty quick.</p>
 
-<h1>The goal</h1>
+<h2>The goal</h2>
 
 <p>We know the goal- to get a blog up and running on gh-pages- specifically, <a href="https://help.github.com/articles/creating-project-pages-manually/">gh project pages</a>- since we already have a site at yourusername.github.io</p>
 
-<h1>The steps</h1>
+<h2>The steps</h2>
 
 <p>First, create a new repo on github.com called blog. This is where our octopress site will live. Copy the location (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>).</p>
 
@@ -545,7 +545,7 @@
 
 <p>Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000</p>
 
-<h1>HOLD UP!!</h1>
+<h2>HOLD UP!!</h2>
 
 <p>There&rsquo;s one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in &lsquo;Main Configs&rsquo; to your info (url will be <a href="https://yourusername.github.io/blog">https://yourusername.github.io/blog</a> - title will be whatever you want - author will be your name - etc) you must do one more thing!</p>
 
@@ -574,7 +574,7 @@
 </ul>
 
 
-<h1>And that&rsquo;s how it&rsquo;s done</h1>
+<h2>And that&rsquo;s how it&rsquo;s done</h2>
 
 <p>As always, don&rsquo;t forget to git add . &amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes and make them visible at yourusername.github.io/blog</p>
 

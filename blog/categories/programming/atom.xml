@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | Michele Degges]]></title>
+  <link href="http://mdeggies.github.io/blog/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://mdeggies.github.io/blog/"/>
+  <updated>2016-03-09T20:51:06-08:00</updated>
+  <id>http://mdeggies.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Michele Degges]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Technical Challenge: Learn from my Mistakes]]></title>
+    <link href="http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes/"/>
+    <updated>2016-03-09T20:38:32-08:00</updated>
+    <id>http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes</id>
+    <content type="html"><![CDATA[<p>After applying to a few startups on Angellist, I was super excited to have gotten through my very first phone interview. At the end of the call, the HR rep scheduled me for a technical challenge. He said I would have up to 24 hours to complete the challenge, but that I&rsquo;d have to check in at the 2 hour mark and report my progress. I would be assessed on both the first draft of my code at the 2 hour mark, and the final version.</p>
+
+<p>The task was pretty straightforward: to create Connect 4 in the language I felt most comfortable with. Since I applied for a backend position, I wasn&rsquo;t supposed to create any front-end or accept any user input. The program was supposed to simulate the turns taken by players and print out the board in ASCII, like so:</p>
+
+<pre><code class="javascript">/* * * * * * * *
+* * * * * * *
+* * * * * * *
+* * * * * * *
+* x O * * * * */ 
+</code></pre>
+
+<pre><code class="javascript Basic Connect 4">/* A randomized Connect 4 Javascript Game that works with any board size */
+
+'use strict';
+
+var gameBoard = [];
+var player1;
+var player2;
+var gameOver = 0;
+
+const boardSize = 4;
+
+function gameInit() {
+  for (var i=0; i&lt;boardSize; i++) {
+    gameBoard[i] = [];
+    for (var j=0; j&lt;boardSize; j++) {
+      gameBoard[i][j] = '*';
+    }
+  }
+  console.log('Start Game');
+  console.log(gameBoard);
+  player1 = 1;
+  player2 = 0;
+}
+
+function randomMove() {
+  return Math.floor(Math.random() * (boardSize));
+}
+
+function piecePlacement(x, y, piece) {
+  var placed = 0;
+
+  while (!placed) {
+    if (gameBoard[x][y] === '*') {
+      gameBoard[x][y] = piece;
+      placed = 1;
+      return;
+    }
+    else {
+      //iterate up through column
+      for (var i=x-1; i&gt;=0; i--) {
+        if (gameBoard[i][y] === '*') {
+          gameBoard[i][y] = piece;
+          placed = 1;
+          return;
+        }
+      }
+    }
+    var x = boardSize-1;
+    var y = randomMove();
+  }
+}
+
+function move(player) {
+  var x = boardSize-1;
+  var y = randomMove();
+  var piece;
+
+  if (player === 1) {
+    console.log('Player 1 (Os) turn');
+    piece = 'O';
+  }
+  else {
+    console.log('Player 2 (Xs) turn');
+    piece = 'X';
+  }
+
+  checkWin(player);
+  piecePlacement(x, y, piece);
+  console.log(gameBoard);
+}
+
+function winning(count) {
+  if (count === boardSize) {
+    return 1;
+  }
+  return 0;
+}
+
+function checkVertical(piece) {
+  var count = 0;
+  var j=0;
+
+  while (j&lt;boardSize) {
+    for (var i=0; i&lt;boardSize; i++) {
+      if (gameBoard[i][j] === piece) {
+        count += 1;
+      }
+    }
+    if (winning(count)) {
+      return 1;
+    }
+    j += 1;
+    count = 0;
+  }
+}
+
+function checkHorizontal(piece) {
+  var i=0;
+  var count=0;
+
+  while (i&lt;boardSize) {
+    for (var j=0; j&lt;boardSize; j++) {
+      if (gameBoard[i][j] === piece) {
+        count += 1;
+      }
+    }
+    if (winning(count)) {
+      return 1;
+    }
+    i += 1;
+    count = 0;
+  }
+}
+
+function checkDiagonals(piece) {
+  var count = 0;
+
+  for (var i=0; i&lt;boardSize; i++) {
+    for (var j=0; j&lt;boardSize; j++) {
+      if (i === j) {
+        if (gameBoard[i][j] === piece) {
+          count += 1;
+        }
+      }
+    }
+  }
+  if (winning(count)) {
+    return 1;
+  }
+
+  count = 0;
+  i=0;
+  j=boardSize-1;
+
+  while (i&lt;boardSize) {
+    while (j&gt;=0) {
+      if (gameBoard[i][j] === piece) {
+        count += 1;
+      }
+      j -= 1;
+      i += 1;
+    }
+  }
+
+  if (winning(count)) {
+    return 1;
+  }
+}
+
+function checkStalemate(piece) {
+  var count = 0;
+
+  for (var i=0; i&lt;boardSize; i++) {
+    for (var j=0; j&lt;boardSize; j++) {
+      if (gameBoard[i][j] != '*') {
+        count +=1 ;
+      }
+    }
+  }
+
+  if (count &gt;= boardSize*boardSize) {
+    return 1;
+  }
+}
+
+function checkWin(player) {
+  var piece;
+
+  if (player === 1) {
+    piece = 'O';
+  }
+  else {
+    piece = 'X';
+    player = 2;
+  }
+
+  if ((checkVertical(piece)) || (checkHorizontal(piece)) || checkDiagonals(piece)) {
+    console.log('Game over');
+    console.log('Player '+ player + ' won!');
+    gameOver = 1;
+    return;
+  }
+  if (checkStalemate(piece)) {
+    console.log('Game over');
+    console.log('Stalemate!');
+  }
+}
+
+function play() {
+  gameInit();
+  while (!gameOver) {
+    move(player1);
+    if (gameOver) {
+      return;
+    }
+    move(player2);
+  }
+}
+
+play();
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

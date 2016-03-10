@@ -7,17 +7,19 @@ comments: true
 categories: [jekyll, octopress, gh-pages]
 ---
 
+![Octopress](http://i.imgur.com/bkedmGD.png?1)
+
 Integrating [Jekyll](https://jekyllrb.com/) with [gh-pages](https://pages.github.com/) shouldn't take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!
 
 Well, not so fast.. Jekyll and gh-pages are not the stellar, easy-going couple that they claim to be. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.
 
 In comes [Octopress](http://octopress.org/)! Octopress is a static blogging framework built on top of Jekyll. It's supposed to allow for easy integration and deployment. I was so excited when I found out it existed.. but then I started reading through it's documentation and my excitement fizzled out pretty quick.
 
-# The goal
+## The goal
 
 We know the goal- to get a blog up and running on gh-pages- specifically, [gh project pages](https://help.github.com/articles/creating-project-pages-manually/)- since we already have a site at yourusername.github.io
 
-# The steps
+## The steps
 
 First, create a new repo on github.com called blog. This is where our octopress site will live. Copy the location (https://github.com/yourusername/blog.git).
 
@@ -47,16 +49,16 @@ At this point, you'll be asked to give a repository url. Use the same url you co
 
 Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000
 
-# HOLD UP!!
+## HOLD UP!!
 
 There's one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in 'Main Configs' to your info (url will be https://yourusername.github.io/blog - title will be whatever you want - author will be your name - etc) you must do one more thing!
 
-Navigate to the 'Jekyll & Plugins' section. Change the option 
-##### root: / 
+Navigate to the 'Jekyll & Plugins' section. Change the option
+##### root: /
 to  
-##### root: /blog 
+##### root: /blog
 
-This will point the root url of your site to the correct page. Don't forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!) 
+This will point the root url of your site to the correct page. Don't forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!)
 
 After adding, committing, and pushing your changes to github, you'll be able to view your blog at yourusername.github.io/blog
 
@@ -71,8 +73,8 @@ To install a new theme, such as ioveracker's [MNML](https://github.com/ioveracke
 - rake preview
 
 
-# And that's how it's done
+## And that's how it's done
 
 As always, don't forget to git add . && git commit -m "updating site.." && git push -u origin master to save your changes and make them visible at yourusername.github.io/blog
 
-If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter. 
+If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.

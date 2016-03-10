@@ -78,5 +78,6 @@ To install a new theme, such as ioveracker's [MNML](https://github.com/ioveracke
 As always, don't forget to git add . && git commit -m "updating site.." && git push -u origin master to save your changes and make them visible at yourusername.github.io/blog
 
 If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.
+
 <a href="https://twitter.com/mdeggies" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mdeggies</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jekyll | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:45:16-08:00</updated>
+  <updated>2016-03-09T21:46:21-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -102,8 +102,9 @@
 
 <p>As always, don&rsquo;t forget to git add . &amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes and make them visible at yourusername.github.io/blog</p>
 
-<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.
-<a href="https://twitter.com/mdeggies" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mdeggies</a></p>
+<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.</p>
+
+<p><a href="https://twitter.com/mdeggies" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mdeggies</a></p>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 

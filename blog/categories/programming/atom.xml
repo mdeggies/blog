@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:45:16-08:00</updated>
+  <updated>2016-03-09T21:46:21-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -271,7 +271,12 @@ function play() {
 play();
 </code></pre>
 
-<p>Feel free to reach out to me via email (<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x6d;&#x64;&#101;&#103;&#103;&#105;&#101;&#x73;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#109;&#x64;&#101;&#x67;&#103;&#x69;&#101;&#x73;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;</a>), or on Twitter (@mdeggies) :)</p>
+<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.</p>
+
+<p><a href="https://twitter.com/mdeggies" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mdeggies</a></p>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 ]]></content>
   </entry>
   

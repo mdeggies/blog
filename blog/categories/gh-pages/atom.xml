@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gh-pages | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/gh-pages/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:36:24-08:00</updated>
+  <updated>2016-03-09T21:38:30-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -18,7 +18,9 @@
     <link href="http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages/"/>
     <updated>2016-03-02T00:29:36-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages</id>
-    <content type="html"><![CDATA[<p>Integrating <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://pages.github.com/">gh-pages</a> shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/bkedmGD.png?1" alt="Octopress" /></p>
+
+<p>Integrating <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://pages.github.com/">gh-pages</a> shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
 
 <p>Well, not so fast.. Jekyll and gh-pages are not the stellar, easy-going couple that they claim to be. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.</p>
 

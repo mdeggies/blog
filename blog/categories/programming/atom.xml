@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:36:24-08:00</updated>
+  <updated>2016-03-09T21:38:30-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -18,7 +18,7 @@
     <link href="http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes/"/>
     <updated>2016-03-09T20:38:32-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes</id>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/CMt4ZDx.png?1" alt="Conect4" /></p>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/CMt4ZDx.png?1" alt="Connect4" /></p>
 
 <p>After applying to a few startups on Angellist, I was super excited to have gotten through my very first phone interview. At the end of the call, the HR rep scheduled me for a technical challenge. He said I would have up to 24 hours to complete the challenge, but that I&rsquo;d have to check in at the 2 hour mark and report my progress. I would be assessed on both the first draft of my code at the 2 hour mark, and the final version.</p>
 
@@ -271,7 +271,7 @@ function play() {
 play();
 </code></pre>
 
-<p>Feel free to reach out to me via email (<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#109;&#x64;&#x65;&#x67;&#x67;&#x69;&#x65;&#115;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x6d;&#100;&#x65;&#x67;&#x67;&#105;&#101;&#115;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a>), or on Twitter (@mdeggies) :)</p>
+<p>Feel free to reach out to me via email (<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#109;&#100;&#x65;&#103;&#x67;&#x69;&#101;&#x73;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;">&#109;&#100;&#x65;&#103;&#103;&#x69;&#x65;&#x73;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a>), or on Twitter (@mdeggies) :)</p>
 ]]></content>
   </entry>
   

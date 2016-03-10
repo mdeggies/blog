@@ -4,7 +4,7 @@
   <title><![CDATA[Michele Degges]]></title>
   <link href="http://mdeggies.github.io/blog/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
-  <updated>2016-03-09T21:36:24-08:00</updated>
+  <updated>2016-03-09T21:38:30-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
   <author>
     <name><![CDATA[Michele Degges]]></name>
@@ -21,7 +21,7 @@
     <updated>2016-03-09T20:38:32-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes</id>
     
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/CMt4ZDx.png?1" alt="Conect4" /></p>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/CMt4ZDx.png?1" alt="Connect4" /></p>
 
 <p>After applying to a few startups on Angellist, I was super excited to have gotten through my very first phone interview. At the end of the call, the HR rep scheduled me for a technical challenge. He said I would have up to 24 hours to complete the challenge, but that I&rsquo;d have to check in at the 2 hour mark and report my progress. I would be assessed on both the first draft of my code at the 2 hour mark, and the final version.</p>
 
@@ -481,7 +481,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Feel free to reach out to me via email (<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x6d;&#x64;&#x65;&#x67;&#x67;&#105;&#x65;&#x73;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x6d;&#x64;&#101;&#103;&#x67;&#105;&#101;&#115;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a>), or on Twitter (@mdeggies) :)</p>
+<p>Feel free to reach out to me via email (<a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x6d;&#100;&#x65;&#x67;&#103;&#105;&#101;&#115;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#x6d;&#100;&#101;&#x67;&#103;&#x69;&#x65;&#x73;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a>), or on Twitter (@mdeggies) :)</p>
 ]]></content>
     
   </entry>
@@ -494,7 +494,9 @@
     <updated>2016-03-02T00:29:36-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages</id>
     
-    <content type="html"><![CDATA[<p>Integrating <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://pages.github.com/">gh-pages</a> shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/bkedmGD.png?1" alt="Octopress" /></p>
+
+<p>Integrating <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://pages.github.com/">gh-pages</a> shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
 
 <p>Well, not so fast.. Jekyll and gh-pages are not the stellar, easy-going couple that they claim to be. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.</p>
 

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge-learn-from-my-mistakes/</loc>
+<lastmod>2016-03-09T20:38:32-08:00</lastmod>
+</url>
+<url>
 <loc>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages/</loc>
 <lastmod>2016-03-02T00:29:36-08:00</lastmod>
 </url>
@@ -18,5 +22,14 @@
 </url>
 <url>
 <loc>http://mdeggies.github.io/blog/blog/categories/gh-pages/</loc>
+</url>
+<url>
+<loc>http://mdeggies.github.io/blog/blog/categories/programming/</loc>
+</url>
+<url>
+<loc>http://mdeggies.github.io/blog/blog/categories/interviews/</loc>
+</url>
+<url>
+<loc>http://mdeggies.github.io/blog/blog/categories/javascript/</loc>
 </url>
 </urlset>

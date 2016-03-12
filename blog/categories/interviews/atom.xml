@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Michele Degges]]></title>
-  <link href="http://mdeggies.github.io/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: interviews | Michele Degges]]></title>
+  <link href="http://mdeggies.github.io/blog/blog/categories/interviews/atom.xml" rel="self"/>
   <link href="http://mdeggies.github.io/blog/"/>
   <updated>2016-03-11T23:29:14-08:00</updated>
   <id>http://mdeggies.github.io/blog/</id>
@@ -14,13 +14,10 @@
 
   
   <entry>
-    
     <title type="html"><![CDATA[technical challenge]]></title>
     <link href="http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge/"/>
-    
     <updated>2016-03-09T20:38:32-08:00</updated>
     <id>http://mdeggies.github.io/blog/blog/2016/03/09/technical-challenge</id>
-    
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/17k3QJq.jpg?1" alt="Challenge" /></p>
 
 <p>After applying to a few startups on Angellist, I was super excited to have gotten through my very first phone interview. At the end of the call, the HR rep scheduled me for a technical challenge. He said I would have up to 24 hours to complete the challenge, but that I&rsquo;d have to check in at the 2 hour mark and report my progress. I would be assessed on both the first draft of my code at the 2 hour mark, and the final version.</p>
@@ -70,109 +67,6 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 ]]></content>
-    
-  </entry>
-  
-  <entry>
-    
-    <title type="html"><![CDATA[Integrating Jekyll with gh-pages]]></title>
-    <link href="http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages/"/>
-    
-    <updated>2016-03-02T00:29:36-08:00</updated>
-    <id>http://mdeggies.github.io/blog/blog/2016/03/02/integrating-jekyll-with-gh-pages</id>
-    
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/bkedmGD.png?1" alt="Octopress" /></p>
-
-<p>Integrating <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://pages.github.com/">gh-pages</a> shouldn&rsquo;t take more than 15 minutes. The idea is simple: you already have a personal website hosted on yourusername.github.io. The goal is to create a blog and host it on yourusername.github.io/blog. Sounds easy, right?!</p>
-
-<p>Well, not so fast.. Jekyll and gh-pages are not the stellar, easy-going couple that they claim to be. Integrating the two- especially when you already have a static site at yourusername.github.io- is not such an easy task.</p>
-
-<p>In comes <a href="http://octopress.org/">Octopress</a>! Octopress is a static blogging framework built on top of Jekyll. It&rsquo;s supposed to allow for easy integration and deployment. I was so excited when I found out it existed.. but then I started reading through it&rsquo;s documentation and my excitement fizzled out pretty quick.</p>
-
-<h2>The goal</h2>
-
-<p>We know the goal- to get a blog up and running on gh-pages- specifically, <a href="https://help.github.com/articles/creating-project-pages-manually/">gh project pages</a>- since we already have a site at yourusername.github.io</p>
-
-<h2>The steps</h2>
-
-<p>First, create a new repo on github.com called blog. This is where our octopress site will live. Copy the location (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>).</p>
-
-<p>In your terminal, navigate to the directory you want to create and edit your blog project in. In that directory, perform these commands:</p>
-
-<ul>
-<li>git clone git://github.com/imathis/octopress.git blog</li>
-<li>cd blog</li>
-<li>git init</li>
-<li>git add .</li>
-<li>git remote add origin <a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a></li>
-<li>git commit -m &ldquo;initializing octopress&rdquo;</li>
-<li>git push origin master</li>
-</ul>
-
-
-<p>You&rsquo;ve just initialized your blog project with Octopress! Now let&rsquo;s set everything up:</p>
-
-<ul>
-<li>gem install bundler</li>
-<li>bundle install</li>
-<li>rake setup_github_pages</li>
-</ul>
-
-
-<p>At this point, you&rsquo;ll be asked to give a repository url. Use the same url you copied from github (<a href="https://github.com/yourusername/blog.git">https://github.com/yourusername/blog.git</a>)</p>
-
-<ul>
-<li>git config branch.master.remote origin</li>
-<li>rake install</li>
-<li>rake generate</li>
-<li>rake deploy</li>
-<li>rake preview</li>
-</ul>
-
-
-<p>Rake install will install the default Octopress theme on your site. Generate and deploy will get it running, and preview will allow you to preview your site locally at localhost:4000</p>
-
-<h2>HOLD UP!!</h2>
-
-<p>There&rsquo;s one last step you need to follow to get your blog up and running! Navigate to the _config.yml file in the root of your blog project. In addition to changing the default info in &lsquo;Main Configs&rsquo; to your info (url will be <a href="https://yourusername.github.io/blog">https://yourusername.github.io/blog</a> - title will be whatever you want - author will be your name - etc) you must do one more thing!</p>
-
-<p>Navigate to the &lsquo;Jekyll &amp; Plugins&rsquo; section. Change the option</p>
-
-<h5>root: /</h5>
-
-<p>to</p>
-
-<h5>root: /blog</h5>
-
-<p>This will point the root url of your site to the correct page. Don&rsquo;t forget to do this step, or none of your styling will be visible (as you will be doing GET requests to the wrong urls!)</p>
-
-<p>After adding, committing, and pushing your changes to github, you&rsquo;ll be able to view your blog at yourusername.github.io/blog</p>
-
-<h2>Optionally install a new theme</h2>
-
-<p>To install a new theme, such as ioveracker&rsquo;s <a href="https://github.com/ioveracker/mnml">MNML</a>, follow these steps:</p>
-
-<ul>
-<li>git clone git://github.com/ioveracker/mnml.git .themes/mnml</li>
-<li>rake install[&lsquo;mnml&rsquo;]</li>
-<li>rake generate</li>
-<li>rake deploy</li>
-<li>rake preview</li>
-</ul>
-
-
-<h2>And that&rsquo;s how it&rsquo;s done</h2>
-
-<p>As always, don&rsquo;t forget to git add . &amp;&amp; git commit -m &ldquo;updating site..&rdquo; &amp;&amp; git push -u origin master to save your changes and make them visible at yourusername.github.io/blog</p>
-
-<p>If you have any questions, feel free to hit me up at mdeggies@gmail.com, or message me on twitter.</p>
-
-<p><a href="https://twitter.com/mdeggies" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mdeggies</a></p>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-]]></content>
-    
   </entry>
   
 </feed>
